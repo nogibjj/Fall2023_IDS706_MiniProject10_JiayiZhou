@@ -27,7 +27,7 @@ def main():
         spark,
         df,
         "SELECT * FROM Goose WHERE  year= 1921",
-        "name",
+        "Goose",
     )
     # example transform
     example_transform(df)
