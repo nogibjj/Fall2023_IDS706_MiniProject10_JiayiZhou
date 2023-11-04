@@ -1,37 +1,39 @@
-[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
-## Template for Python projects with RUFF linter
+## Fall2023_IDS706 Mini Project 10: PySpark Data Processing
+### by Jiayi Zhou [![CI](https://github.com/nogibjj/Fall2023_IDS706_MiniProject10_JiayiZhou/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Fall2023_IDS706_MiniProject10_JiayiZhou/actions/workflows/cicd.yml)
 
-![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
+### Purpose
+This is for class data engineering mini project 10. It uses PySpark to perform data processing, including a Spark SQL query and one data transformation on a large dataset.
 
 
+### Requirements
+  * Use PySpark to perform data processing on a large dataset
+  * Include at least one Spark SQL query and one data transformation
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+### Functionality
+The code does data processing with Spark SQL and transformations:
+  * [E] Extract a dataset from a URL with CSV format.
+  * [T] Transform the data by filtering to get it ready for analysis.
+  * [L] Load the transformed data into a database table using Spark SQL.
+  * [Q] Accept and execute SQL queries on the database to analyze and retrieve insights from the data.
 
-Things included are:
+### Preparation:
+1. open codespaces
+2. wait for environment to be installed
+3. run: `python main.py`
+4. [Pyspark Output Data/Summary Markdown File](pyspark_output.md)
 
-* `Makefile`
+### Format code
+1. Format code: `make format`
+2. Lint code: `make lint`
+3. Test code: `make test`
 
-* `Pytest`
-
-* `pandas`
-
-* `Ruff`:  
-
-Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff here](https://github.com/astral-sh/ruff).
-
-* `Dockerfile`
-
-* `GitHub copilot`
-
-* `jupyter` and `ipython` 
-
-* A base set of libraries for devops and web
-
-* `githubactions`
-
-## References
-
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
-
+### Process
+1. I first extract the dataset via `extract` 
+2. I then start a spark session via `start_spark`
+3. I then load the dataset via `load_data`
+4. I then find some descriptive statistics via `descibe`
+5. I then query the dataset via `query`
+6. I then do some more transformation on the sample dataset via `example_transform`
+7. I finally end my spark session via `end_spark`
 
 

@@ -51,7 +51,7 @@ def extract(
 
     return file_path
 
-def load_data(spark, data="data/Goose.csv", name="CompetitionRecord"):
+def load_data(spark, data="data/Goose.csv"):
     """load data"""
     # data preprocessing by setting schema
     schema = StructType([
