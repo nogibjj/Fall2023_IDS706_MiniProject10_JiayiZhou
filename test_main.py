@@ -40,7 +40,9 @@ def test_describe(spark):
 
 def test_query(spark):
     df = load_data(spark)
-    result = query(spark, df, "SELECT * FROM Goose WHERE  year= 1921", "CompetitionRecord")
+    result = query(
+        spark, df, "SELECT * FROM Goose WHERE  year= 1921", "Goose"
+    )
     assert result is None
 
 
