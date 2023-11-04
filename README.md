@@ -27,13 +27,4 @@ The code does data processing with Spark SQL and transformations:
 2. Lint code: `make lint`
 3. Test code: `make test`
 
-### Process
-1. I first extract the dataset via `extract` 
-2. I then start a spark session via `start_spark`
-3. I then load the dataset via `load_data`
-4. I then find some descriptive statistics via `descibe`
-5. I then query the dataset via `query`
-6. I then do some more transformation on the sample dataset via `example_transform`
-7. I finally end my spark session via `end_spark`
-
 
