@@ -4,7 +4,6 @@ library functions
 import os
 import requests
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import when, col
 
 from pyspark.sql.types import (
      StructType, 
